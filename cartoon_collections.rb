@@ -5,11 +5,9 @@ end
 
 def summon_captain_planet(veggies)# code an argument here
   # Your code here
-  collections = []
-  veggies.each do |veggy|
-    collections << veggy.capitalize()+"!"
+  veggies.collect do |veggy|
+    veggy.capitalize()+"!"
   end
-  collections
 end
 
 def long_planeteer_calls(calls_long)# code an argument here
